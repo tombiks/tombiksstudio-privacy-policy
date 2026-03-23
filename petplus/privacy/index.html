@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet+ Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #5a3fa0 0%, #1a0f2e 30%, #0a0612 100%);
+      color: #f0eeff;
+      padding: 24px 16px 48px;
+    }
+    .container { max-width: 820px; margin: 0 auto; }
+    header { text-align: center; padding: 40px 0 32px; }
+    .badge {
+      display: inline-block;
+      background: rgba(123, 104, 238, 0.2);
+      color: #c4b5fd;
+      border: 1px solid rgba(196, 181, 253, 0.3);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.1;
+      background: linear-gradient(135deg, #a78bfa, #7b68ee, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .subtitle { color: #a99ecc; font-size: 0.95rem; margin-bottom: 6px; }
+    .updated { color: #7a6fa8; font-size: 0.82rem; }
+    .lang-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 28px 0;
+    }
+    .lang-tab {
+      cursor: pointer;
+      background: rgba(123, 104, 238, 0.1);
+      border: 1px solid rgba(123, 104, 238, 0.25);
+      color: #c4b5fd;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      transition: all 0.18s;
+      user-select: none;
+    }
+    .lang-tab:hover {
+      background: rgba(123, 104, 238, 0.22);
+      border-color: rgba(167, 139, 250, 0.5);
+    }
+    .lang-tab.active {
+      background: rgba(123, 104, 238, 0.35);
+      border-color: #7b68ee;
+      color: #e9e3ff;
+      font-weight: 600;
+    }
+    .policy-card {
+      background: rgba(15, 10, 28, 0.85);
+      border: 1px solid rgba(123, 104, 238, 0.22);
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(10px);
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    h2 {
+      font-size: 1.5rem;
+      color: #a78bfa;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+    }
+    h3 { font-size: 1.05rem; color: #c4b5fd; margin: 22px 0 8px; }
+    p { color: #ccc5e8; line-height: 1.75; font-size: 0.95rem; margin-bottom: 10px; }
+    ul { color: #ccc5e8; line-height: 1.75; font-size: 0.95rem; padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 4px; }
+    a { color: #a78bfa; text-decoration: underline; }
+    .highlight-box {
+      background: rgba(123, 104, 238, 0.1);
+      border-left: 3px solid #7b68ee;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    footer { text-align: center; margin-top: 32px; color: #6a5fa0; font-size: 0.83rem; }
+    footer a { color: #9580d4; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Pet+</span>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Your pets' data stays private</p>
+      <p class="updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="lang-tabs">
+      <span class="lang-tab active" onclick="setLang('en', this)">English</span>
+      <span class="lang-tab" onclick="setLang('tr', this)">Türkçe</span>
+      <span class="lang-tab" onclick="setLang('de', this)">Deutsch</span>
+      <span class="lang-tab" onclick="setLang('fr', this)">Français</span>
+      <span class="lang-tab" onclick="setLang('es', this)">Español</span>
+      <span class="lang-tab" onclick="setLang('pt', this)">Português</span>
+      <span class="lang-tab" onclick="setLang('hi', this)">हिन्दी</span>
+      <span class="lang-tab" onclick="setLang('id', this)">Bahasa</span>
+      <span class="lang-tab" onclick="setLang('ja', this)">日本語</span>
+      <span class="lang-tab" onclick="setLang('ko', this)">한국어</span>
+      <span class="lang-tab" onclick="setLang('ar', this)">العربية</span>
+    </div>
+
+    <div class="policy-card">
+
+      <!-- ENGLISH -->
+      <div class="lang-section active" id="lang-en">
+        <h2>Privacy Policy</h2>
+        <p>This Privacy Policy describes how <strong>Pet+</strong> ("we", "us") collects, uses, and protects the information you provide when using our pet tracker application. We respect your privacy and are committed to protecting the data of you and your pets.</p>
+
+        <h3>1. Information We Collect</h3>
+        <h3>1.1 Pet Information</h3>
+        <p>When you add pets to the app, you provide:</p>
+        <ul>
+          <li>Pet name, species, and breed</li>
+          <li>Date of birth and gender</li>
+          <li>Weight and physical description</li>
+          <li>Pet photos</li>
+        </ul>
+        <p>This data is stored <strong>locally on your device</strong> and, if you choose, in your personal Google Drive account.</p>
+
+        <h3>1.2 Reminders and Notes</h3>
+        <p>Reminders (vet visits, medications, vaccinations) and notes you create are stored locally on your device and optionally backed up to your Google Drive.</p>
+
+        <h3>1.3 Google Drive Backup</h3>
+        <div class="highlight-box">
+          <p>Pet+ can back up your data to your own Google Drive account. We request access only to files created by this app. We cannot read or modify any other files in your Google Drive. Your backup data is stored in your personal account under your full control.</p>
+        </div>
+
+        <h3>1.4 Advertising (Free Version)</h3>
+        <p>The free version of Pet+ displays advertisements served by <strong>Google AdMob</strong>. AdMob may collect device identifiers (such as Advertising ID) and IP address to serve relevant ads. This data is processed by Google according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Premium users do not see any ads.</p>
+
+        <h3>1.5 In-App Purchase</h3>
+        <p>If you purchase Pet+ Premium, the transaction is processed by <strong>Google Play Billing</strong>. We receive only a confirmation that the purchase was completed — we do not receive or store any payment details (card numbers, billing addresses, etc.).</p>
+
+        <h3>2. How We Use Your Data</h3>
+        <ul>
+          <li>To provide and improve app features</li>
+          <li>To send local push notifications for reminders</li>
+          <li>To perform backup and restore via Google Drive (only if you enable this feature)</li>
+        </ul>
+
+        <h3>3. Data Sharing</h3>
+        <p>We do not sell, trade, or transfer your personal data to third parties. Your pet data never leaves your device or your personal Google Drive account, except when Google AdMob serves ads (free version only).</p>
+
+        <h3>4. Data Storage and Security</h3>
+        <p>All pet data is stored locally on your device using the Android Room database. Backup data is stored in your personal Google Drive. We apply industry-standard security practices within the app.</p>
+
+        <h3>5. Children's Privacy</h3>
+        <p>Pet+ is suitable for all ages and does not knowingly collect personal information from children under 13 beyond what is described in this policy.</p>
+
+        <h3>6. Your Rights</h3>
+        <p>You can delete all your data at any time by uninstalling the app. To delete your Google Drive backup, remove the backup file from your Drive directly.</p>
+
+        <h3>7. Contact</h3>
+        <p>If you have any questions about this Privacy Policy, please contact us at: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- TURKISH -->
+      <div class="lang-section" id="lang-tr">
+        <h2>Gizlilik Politikası</h2>
+        <p>Bu Gizlilik Politikası, <strong>Pet+</strong> uygulamasını kullandığınızda topladığımız, kullandığımız ve koruduğumuz bilgileri açıklar. Gizliliğinize saygı duyuyor ve siz ile evcil hayvanlarınızın verilerini korumayı taahhüt ediyoruz.</p>
+
+        <h3>1. Topladığımız Bilgiler</h3>
+        <h3>1.1 Evcil Hayvan Bilgileri</h3>
+        <p>Uygulamaya evcil hayvan eklediğinizde aşağıdaki bilgileri sağlarsınız:</p>
+        <ul>
+          <li>Evcil hayvan adı, türü ve ırkı</li>
+          <li>Doğum tarihi ve cinsiyeti</li>
+          <li>Ağırlık ve fiziksel açıklama</li>
+          <li>Evcil hayvan fotoğrafları</li>
+        </ul>
+        <p>Bu veriler <strong>cihazınızda yerel olarak</strong> ve tercih ederseniz kişisel Google Drive hesabınızda saklanır.</p>
+
+        <h3>1.2 Hatırlatıcılar ve Notlar</h3>
+        <p>Oluşturduğunuz hatırlatıcılar (veteriner ziyaretleri, ilaçlar, aşılar) ve notlar cihazınızda yerel olarak saklanır ve isteğe bağlı olarak Google Drive'a yedeklenir.</p>
+
+        <h3>1.3 Google Drive Yedekleme</h3>
+        <div class="highlight-box">
+          <p>Pet+, verilerinizi kendi Google Drive hesabınıza yedekleyebilir. Yalnızca bu uygulama tarafından oluşturulan dosyalara erişim talep ediyoruz. Google Drive'ınızdaki diğer dosyaları okuyamaz veya değiştiremeyiz. Yedekleme verileriniz tam kontrolünüz altında kişisel hesabınızda saklanır.</p>
+        </div>
+
+        <h3>1.4 Reklamlar (Ücretsiz Sürüm)</h3>
+        <p>Pet+'ın ücretsiz sürümü <strong>Google AdMob</strong> tarafından sunulan reklamlar gösterir. AdMob, ilgili reklamları sunmak için cihaz tanımlayıcıları ve IP adresi toplayabilir. Bu veriler <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google'ın Gizlilik Politikası</a> kapsamında işlenir. Premium kullanıcılar reklam görmez.</p>
+
+        <h3>1.5 Uygulama İçi Satın Alma</h3>
+        <p>Pet+ Premium satın alırsanız işlem <strong>Google Play Billing</strong> tarafından gerçekleştirilir. Yalnızca satın almanın tamamlandığına dair bir onay alırız; herhangi bir ödeme bilgisi almaz veya saklamayız.</p>
+
+        <h3>2. Verilerinizi Nasıl Kullanıyoruz</h3>
+        <ul>
+          <li>Uygulama özelliklerini sunmak ve geliştirmek için</li>
+          <li>Hatırlatıcılar için yerel bildirimler göndermek için</li>
+          <li>Google Drive üzerinden yedekleme ve geri yükleme için (yalnızca bu özelliği etkinleştirirseniz)</li>
+        </ul>
+
+        <h3>3. Veri Paylaşımı</h3>
+        <p>Kişisel verilerinizi üçüncü taraflara satmıyor, takas etmiyor veya aktarmıyoruz. Evcil hayvan verileriniz yalnızca ücretsiz sürümde Google AdMob reklamları için kullanılan veriler dışında cihazınızı veya kişisel Google Drive hesabınızı terk etmez.</p>
+
+        <h3>4. Veri Depolama ve Güvenlik</h3>
+        <p>Tüm evcil hayvan verileri Android Room veritabanı kullanılarak cihazınızda yerel olarak saklanır. Yedekleme verileri kişisel Google Drive'ınızda saklanır.</p>
+
+        <h3>5. Çocukların Gizliliği</h3>
+        <p>Pet+ her yaşa uygundur ve bu politikada açıklananların ötesinde 13 yaş altı çocuklardan bilerek kişisel bilgi toplamaz.</p>
+
+        <h3>6. Haklarınız</h3>
+        <p>Uygulamayı kaldırarak tüm verilerinizi istediğiniz zaman silebilirsiniz. Google Drive yedeklemenizi silmek için yedekleme dosyasını Drive'ınızdan doğrudan kaldırın.</p>
+
+        <h3>7. İletişim</h3>
+        <p>Bu Gizlilik Politikası hakkında sorularınız için: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- GERMAN -->
+      <div class="lang-section" id="lang-de">
+        <h2>Datenschutzerklärung</h2>
+        <p>Diese Datenschutzerklärung beschreibt, wie <strong>Pet+</strong> Informationen sammelt, verwendet und schützt, die Sie bei der Nutzung unserer Haustierverfolgungsanwendung bereitstellen.</p>
+
+        <h3>1. Gesammelte Informationen</h3>
+        <h3>1.1 Haustier-Informationen</h3>
+        <p>Wenn Sie Haustiere in der App hinzufügen, geben Sie folgendes an:</p>
+        <ul>
+          <li>Haustiername, Tierart und Rasse</li>
+          <li>Geburtsdatum und Geschlecht</li>
+          <li>Gewicht und physische Beschreibung</li>
+          <li>Haustierfotos</li>
+        </ul>
+        <p>Diese Daten werden <strong>lokal auf Ihrem Gerät</strong> und optional in Ihrem Google Drive-Konto gespeichert.</p>
+
+        <h3>1.2 Erinnerungen und Notizen</h3>
+        <p>Erinnerungen (Tierarztbesuche, Medikamente, Impfungen) und Notizen werden lokal gespeichert und optional in Google Drive gesichert.</p>
+
+        <h3>1.3 Google Drive Backup</h3>
+        <div class="highlight-box">
+          <p>Pet+ kann Ihre Daten in Ihrem eigenen Google Drive-Konto sichern. Wir fordern nur Zugriff auf Dateien an, die von dieser App erstellt wurden. Wir können keine anderen Dateien in Ihrem Drive lesen oder ändern. Ihre Backup-Daten bleiben unter Ihrer vollständigen Kontrolle.</p>
+        </div>
+
+        <h3>1.4 Werbung (Kostenlose Version)</h3>
+        <p>Die kostenlose Version zeigt Werbung von <strong>Google AdMob</strong>. AdMob kann Gerätekennungen und IP-Adresse sammeln, gemäß der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzrichtlinie von Google</a>. Premium-Nutzer sehen keine Werbung.</p>
+
+        <h3>1.5 In-App-Kauf</h3>
+        <p>Pet+ Premium wird über <strong>Google Play Billing</strong> abgewickelt. Wir erhalten nur eine Kaufbestätigung — keine Zahlungsdetails werden gespeichert.</p>
+
+        <h3>2. Verwendung Ihrer Daten</h3>
+        <ul>
+          <li>Bereitstellung und Verbesserung von App-Funktionen</li>
+          <li>Lokale Push-Benachrichtigungen für Erinnerungen</li>
+          <li>Backup und Wiederherstellung über Google Drive (nur wenn aktiviert)</li>
+        </ul>
+
+        <h3>3. Datenweitergabe</h3>
+        <p>Wir verkaufen oder übertragen Ihre persönlichen Daten nicht an Dritte. Ihre Haustierdaten verlassen Ihr Gerät nicht, außer für AdMob-Werbung (nur kostenlose Version).</p>
+
+        <h3>4. Datenschutz für Kinder</h3>
+        <p>Pet+ ist für alle Altersgruppen geeignet und sammelt wissentlich keine Daten von Kindern unter 13 Jahren.</p>
+
+        <h3>5. Kontakt</h3>
+        <p>Bei Fragen: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- FRENCH -->
+      <div class="lang-section" id="lang-fr">
+        <h2>Politique de Confidentialité</h2>
+        <p>Cette politique décrit comment <strong>Pet+</strong> collecte, utilise et protège les informations lors de l'utilisation de notre application de suivi des animaux de compagnie.</p>
+
+        <h3>1. Informations Collectées</h3>
+        <h3>1.1 Informations sur les Animaux</h3>
+        <p>Lors de l'ajout d'animaux, vous fournissez :</p>
+        <ul>
+          <li>Nom, espèce et race de l'animal</li>
+          <li>Date de naissance et sexe</li>
+          <li>Poids et description physique</li>
+          <li>Photos de l'animal</li>
+        </ul>
+        <p>Ces données sont stockées <strong>localement sur votre appareil</strong> et optionnellement dans votre Google Drive personnel.</p>
+
+        <h3>1.2 Rappels et Notes</h3>
+        <p>Les rappels (visites vétérinaires, médicaments, vaccinations) et notes sont stockés localement et sauvegardés optionnellement sur Google Drive.</p>
+
+        <h3>1.3 Sauvegarde Google Drive</h3>
+        <div class="highlight-box">
+          <p>Pet+ peut sauvegarder vos données sur votre propre Google Drive. Nous demandons l'accès uniquement aux fichiers créés par cette app. Nous ne pouvons pas lire ou modifier d'autres fichiers dans votre Drive. Vos données restent sous votre contrôle total.</p>
+        </div>
+
+        <h3>1.4 Publicité (Version Gratuite)</h3>
+        <p>La version gratuite affiche des publicités via <strong>Google AdMob</strong>, qui peut collecter identifiants d'appareil et adresse IP selon la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de Confidentialité de Google</a>. Les utilisateurs Premium ne voient pas de publicités.</p>
+
+        <h3>1.5 Achats In-App</h3>
+        <p>Pet+ Premium est traité par <strong>Google Play Billing</strong>. Nous recevons uniquement une confirmation d'achat — aucun détail de paiement n'est stocké.</p>
+
+        <h3>2. Utilisation des Données</h3>
+        <ul>
+          <li>Fournir et améliorer les fonctionnalités</li>
+          <li>Notifications push locales pour les rappels</li>
+          <li>Sauvegarde Google Drive (si activée)</li>
+        </ul>
+
+        <h3>3. Partage des Données</h3>
+        <p>Nous ne vendons pas vos données à des tiers. Vos données ne quittent pas votre appareil sauf pour les publicités AdMob (version gratuite uniquement).</p>
+
+        <h3>4. Confidentialité des Enfants</h3>
+        <p>Pet+ convient à tous les âges et ne collecte pas de données d'enfants de moins de 13 ans.</p>
+
+        <h3>5. Contact</h3>
+        <p>Pour toute question : <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- SPANISH -->
+      <div class="lang-section" id="lang-es">
+        <h2>Política de Privacidad</h2>
+        <p>Esta política describe cómo <strong>Pet+</strong> recopila, usa y protege la información al usar nuestra aplicación de seguimiento de mascotas.</p>
+
+        <h3>1. Información Recopilada</h3>
+        <h3>1.1 Información de Mascotas</h3>
+        <p>Al agregar mascotas proporciona:</p>
+        <ul>
+          <li>Nombre, especie y raza</li>
+          <li>Fecha de nacimiento y género</li>
+          <li>Peso y descripción física</li>
+          <li>Fotos de la mascota</li>
+        </ul>
+        <p>Datos almacenados <strong>localmente en su dispositivo</strong> y opcionalmente en su Google Drive personal.</p>
+
+        <h3>1.2 Recordatorios y Notas</h3>
+        <p>Recordatorios (veterinario, medicamentos, vacunas) y notas se guardan localmente y se respaldan opcionalmente en Google Drive.</p>
+
+        <h3>1.3 Copia de Seguridad en Google Drive</h3>
+        <div class="highlight-box">
+          <p>Pet+ puede hacer copias de seguridad en su Google Drive. Solo accedemos a archivos creados por esta app. No podemos leer ni modificar otros archivos. Sus datos permanecen bajo su control total.</p>
+        </div>
+
+        <h3>1.4 Publicidad (Versión Gratuita)</h3>
+        <p>La versión gratuita muestra anuncios de <strong>Google AdMob</strong>, que puede recopilar identificadores y dirección IP según la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>. Los usuarios Premium no ven publicidad.</p>
+
+        <h3>1.5 Compras In-App</h3>
+        <p>Pet+ Premium se procesa mediante <strong>Google Play Billing</strong>. Solo recibimos confirmación de compra, sin datos de pago.</p>
+
+        <h3>2. Uso de Datos</h3>
+        <ul>
+          <li>Proporcionar y mejorar funciones</li>
+          <li>Notificaciones push locales para recordatorios</li>
+          <li>Copias de seguridad en Google Drive (si activado)</li>
+        </ul>
+
+        <h3>3. Compartir Datos</h3>
+        <p>No vendemos datos a terceros. Sus datos no salen de su dispositivo salvo para anuncios AdMob (versión gratuita).</p>
+
+        <h3>4. Privacidad Infantil</h3>
+        <p>Pet+ es apto para todas las edades y no recopila datos de menores de 13 años.</p>
+
+        <h3>5. Contacto</h3>
+        <p>Preguntas: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- PORTUGUESE -->
+      <div class="lang-section" id="lang-pt">
+        <h2>Política de Privacidade</h2>
+        <p>Esta política descreve como o <strong>Pet+</strong> coleta, usa e protege informações ao usar nosso app de rastreamento de animais.</p>
+
+        <h3>1. Informações Coletadas</h3>
+        <h3>1.1 Informações do Animal</h3>
+        <p>Ao adicionar animais você fornece:</p>
+        <ul>
+          <li>Nome, espécie e raça</li>
+          <li>Data de nascimento e gênero</li>
+          <li>Peso e descrição física</li>
+          <li>Fotos do animal</li>
+        </ul>
+        <p>Dados armazenados <strong>localmente no seu dispositivo</strong> e opcionalmente no seu Google Drive pessoal.</p>
+
+        <h3>1.2 Lembretes e Notas</h3>
+        <p>Lembretes (consultas, medicamentos, vacinas) e notas são salvos localmente e copiados opcionalmente para o Google Drive.</p>
+
+        <h3>1.3 Backup no Google Drive</h3>
+        <div class="highlight-box">
+          <p>O Pet+ pode fazer backup dos seus dados no seu Google Drive. Solicitamos acesso apenas aos arquivos criados por este app. Não podemos ler ou modificar outros arquivos. Os dados ficam sob seu controle total.</p>
+        </div>
+
+        <h3>1.4 Publicidade (Versão Gratuita)</h3>
+        <p>A versão gratuita exibe anúncios do <strong>Google AdMob</strong>, que pode coletar identificadores e IP conforme a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>. Usuários Premium não veem anúncios.</p>
+
+        <h3>1.5 Compras no App</h3>
+        <p>Pet+ Premium é processado pelo <strong>Google Play Billing</strong>. Recebemos apenas confirmação de compra, sem dados de pagamento.</p>
+
+        <h3>2. Uso dos Dados</h3>
+        <ul>
+          <li>Fornecer e melhorar recursos do app</li>
+          <li>Notificações push locais para lembretes</li>
+          <li>Backup via Google Drive (se ativado)</li>
+        </ul>
+
+        <h3>3. Compartilhamento</h3>
+        <p>Não vendemos dados a terceiros. Seus dados não saem do dispositivo exceto para anúncios AdMob (versão gratuita).</p>
+
+        <h3>4. Privacidade Infantil</h3>
+        <p>Pet+ é adequado para todas as idades e não coleta dados de crianças menores de 13 anos.</p>
+
+        <h3>5. Contato</h3>
+        <p>Dúvidas: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- HINDI -->
+      <div class="lang-section" id="lang-hi">
+        <h2>गोपनीयता नीति</h2>
+        <p>यह नीति बताती है कि <strong>Pet+</strong> हमारे पालतू जानवर ट्रैकर ऐप में आपकी जानकारी को कैसे एकत्र, उपयोग और सुरक्षित करता है।</p>
+
+        <h3>1. एकत्र की गई जानकारी</h3>
+        <h3>1.1 पालतू जानवर की जानकारी</h3>
+        <p>ऐप में पालतू जानवर जोड़ते समय आप प्रदान करते हैं:</p>
+        <ul>
+          <li>पालतू का नाम, प्रजाति और नस्ल</li>
+          <li>जन्म तिथि और लिंग</li>
+          <li>वजन और शारीरिक विवरण</li>
+          <li>पालतू की फ़ोटो</li>
+        </ul>
+        <p>यह डेटा <strong>आपके डिवाइस पर स्थानीय रूप से</strong> और वैकल्पिक रूप से आपके Google Drive में संग्रहीत होता है।</p>
+
+        <h3>1.2 रिमाइंडर और नोट्स</h3>
+        <p>रिमाइंडर (पशु चिकित्सक, दवाइयाँ, टीकाकरण) और नोट्स स्थानीय रूप से सहेजे जाते हैं और वैकल्पिक रूप से Google Drive पर बैकअप किए जाते हैं।</p>
+
+        <h3>1.3 Google Drive बैकअप</h3>
+        <div class="highlight-box">
+          <p>Pet+ आपके डेटा को आपके Google Drive खाते में बैकअप कर सकता है। हम केवल इस ऐप द्वारा बनाई गई फ़ाइलों तक पहुँच का अनुरोध करते हैं। आपके Drive में अन्य फ़ाइलें नहीं पढ़ी जा सकतीं। बैकअप डेटा आपके पूर्ण नियंत्रण में है।</p>
+        </div>
+
+        <h3>1.4 विज्ञापन (निःशुल्क संस्करण)</h3>
+        <p>निःशुल्क संस्करण <strong>Google AdMob</strong> के विज्ञापन दिखाता है। AdMob डिवाइस पहचानकर्ता और IP एकत्र कर सकता है। <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google की गोपनीयता नीति</a> देखें। Premium उपयोगकर्ताओं को विज्ञापन नहीं दिखाए जाते।</p>
+
+        <h3>1.5 इन-ऐप खरीदारी</h3>
+        <p>Pet+ Premium खरीद <strong>Google Play Billing</strong> द्वारा संसाधित होती है। हम केवल खरीद पुष्टि प्राप्त करते हैं, कोई भुगतान विवरण नहीं।</p>
+
+        <h3>2. डेटा का उपयोग</h3>
+        <ul>
+          <li>ऐप सुविधाएं प्रदान करना और बेहतर बनाना</li>
+          <li>रिमाइंडर के लिए स्थानीय नोटिफिकेशन</li>
+          <li>Google Drive बैकअप (यदि सक्षम)</li>
+        </ul>
+
+        <h3>3. डेटा साझाकरण</h3>
+        <p>हम आपका डेटा तृतीय पक्षों को नहीं बेचते। AdMob विज्ञापनों (केवल निःशुल्क) को छोड़कर डेटा डिवाइस नहीं छोड़ता।</p>
+
+        <h3>4. संपर्क</h3>
+        <p>प्रश्नों के लिए: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- INDONESIAN -->
+      <div class="lang-section" id="lang-id">
+        <h2>Kebijakan Privasi</h2>
+        <p>Kebijakan ini menjelaskan bagaimana <strong>Pet+</strong> mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan aplikasi pelacak hewan peliharaan kami.</p>
+
+        <h3>1. Informasi yang Dikumpulkan</h3>
+        <h3>1.1 Informasi Hewan Peliharaan</h3>
+        <p>Saat menambahkan hewan peliharaan, Anda memberikan:</p>
+        <ul>
+          <li>Nama, spesies, dan ras hewan peliharaan</li>
+          <li>Tanggal lahir dan jenis kelamin</li>
+          <li>Berat badan dan deskripsi fisik</li>
+          <li>Foto hewan peliharaan</li>
+        </ul>
+        <p>Data disimpan <strong>secara lokal di perangkat Anda</strong> dan opsional di Google Drive pribadi.</p>
+
+        <h3>1.2 Pengingat dan Catatan</h3>
+        <p>Pengingat (dokter hewan, obat, vaksinasi) dan catatan disimpan lokal dan opsional dicadangkan ke Google Drive.</p>
+
+        <h3>1.3 Cadangan Google Drive</h3>
+        <div class="highlight-box">
+          <p>Pet+ dapat mencadangkan data ke Google Drive Anda. Kami hanya meminta akses file yang dibuat app ini. File Drive lainnya tidak dapat diakses. Data cadangan sepenuhnya dalam kendali Anda.</p>
+        </div>
+
+        <h3>1.4 Iklan (Versi Gratis)</h3>
+        <p>Versi gratis menampilkan iklan dari <strong>Google AdMob</strong>, yang dapat mengumpulkan pengidentifikasi perangkat dan IP sesuai <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>. Pengguna Premium tidak melihat iklan.</p>
+
+        <h3>1.5 Pembelian Dalam App</h3>
+        <p>Pet+ Premium diproses melalui <strong>Google Play Billing</strong>. Kami hanya menerima konfirmasi pembelian, tanpa detail pembayaran.</p>
+
+        <h3>2. Penggunaan Data</h3>
+        <ul>
+          <li>Menyediakan dan meningkatkan fitur app</li>
+          <li>Notifikasi push lokal untuk pengingat</li>
+          <li>Cadangan Google Drive (jika diaktifkan)</li>
+        </ul>
+
+        <h3>3. Berbagi Data</h3>
+        <p>Kami tidak menjual data kepada pihak ketiga. Data tidak meninggalkan perangkat kecuali untuk iklan AdMob (versi gratis).</p>
+
+        <h3>4. Privasi Anak</h3>
+        <p>Pet+ cocok untuk semua usia dan tidak mengumpulkan data dari anak di bawah 13 tahun.</p>
+
+        <h3>5. Kontak</h3>
+        <p>Pertanyaan: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- JAPANESE -->
+      <div class="lang-section" id="lang-ja">
+        <h2>プライバシーポリシー</h2>
+        <p>このプライバシーポリシーは、<strong>Pet+</strong>がペットトラッカーアプリで収集・使用・保護する情報について説明します。</p>
+
+        <h3>1. 収集する情報</h3>
+        <h3>1.1 ペット情報</h3>
+        <p>ペットを追加する際に提供していただく情報：</p>
+        <ul>
+          <li>ペットの名前、種、品種</li>
+          <li>生年月日と性別</li>
+          <li>体重と身体的特徴</li>
+          <li>ペットの写真</li>
+        </ul>
+        <p>このデータは<strong>デバイスにローカル保存</strong>され、ご希望により個人のGoogle Driveにも保存されます。</p>
+
+        <h3>1.2 リマインダーとメモ</h3>
+        <p>リマインダー（獣医、薬、予防接種）とメモはローカル保存され、オプションでGoogle Driveにバックアップされます。</p>
+
+        <h3>1.3 Google Driveバックアップ</h3>
+        <div class="highlight-box">
+          <p>Pet+はあなたのGoogle Driveにデータをバックアップできます。このアプリが作成したファイルへのアクセスのみ要求します。他のファイルは読み取れません。バックアップデータはあなたの完全な管理下に置かれます。</p>
+        </div>
+
+        <h3>1.4 広告（無料版）</h3>
+        <p>無料版は<strong>Google AdMob</strong>の広告を表示します。AdMobはデバイス識別子とIPを収集する場合があります（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>参照）。Premiumユーザーには広告が表示されません。</p>
+
+        <h3>1.5 アプリ内購入</h3>
+        <p>Pet+ Premiumは<strong>Google Play Billing</strong>で処理されます。購入確認のみ受け取り、支払い詳細は保存しません。</p>
+
+        <h3>2. データの使用</h3>
+        <ul>
+          <li>アプリ機能の提供と改善</li>
+          <li>リマインダーのローカル通知送信</li>
+          <li>Google Drive バックアップと復元（有効にした場合）</li>
+        </ul>
+
+        <h3>3. データ共有</h3>
+        <p>個人データを第三者に販売しません。AdMob広告（無料版のみ）以外でデバイス外にデータが出ることはありません。</p>
+
+        <h3>4. お問い合わせ</h3>
+        <p>ご質問は：<strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- KOREAN -->
+      <div class="lang-section" id="lang-ko">
+        <h2>개인정보 처리방침</h2>
+        <p>이 방침은 <strong>Pet+</strong>가 반려동물 추적 앱 사용 시 수집, 사용, 보호하는 정보를 설명합니다.</p>
+
+        <h3>1. 수집하는 정보</h3>
+        <h3>1.1 반려동물 정보</h3>
+        <p>앱에 반려동물 추가 시 제공하는 정보:</p>
+        <ul>
+          <li>반려동물 이름, 종, 품종</li>
+          <li>생년월일 및 성별</li>
+          <li>체중 및 신체적 특징</li>
+          <li>반려동물 사진</li>
+        </ul>
+        <p>데이터는 <strong>기기에 로컬 저장</strong>되며, 원하시면 개인 Google Drive에도 저장됩니다.</p>
+
+        <h3>1.2 알림 및 메모</h3>
+        <p>알림(수의사, 약, 예방접종)과 메모는 로컬 저장되고 선택적으로 Google Drive에 백업됩니다.</p>
+
+        <h3>1.3 Google Drive 백업</h3>
+        <div class="highlight-box">
+          <p>Pet+는 귀하의 Google Drive에 데이터를 백업할 수 있습니다. 이 앱이 만든 파일에만 접근을 요청합니다. 다른 파일은 읽거나 수정할 수 없습니다. 백업 데이터는 귀하의 완전한 통제 하에 있습니다.</p>
+        </div>
+
+        <h3>1.4 광고 (무료 버전)</h3>
+        <p>무료 버전은 <strong>Google AdMob</strong> 광고를 표시합니다. AdMob은 기기 식별자와 IP를 수집할 수 있습니다(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> 참조). 프리미엄 사용자는 광고가 없습니다.</p>
+
+        <h3>1.5 앱 내 구매</h3>
+        <p>Pet+ 프리미엄은 <strong>Google Play Billing</strong>으로 처리됩니다. 구매 확인만 받으며 결제 정보는 저장하지 않습니다.</p>
+
+        <h3>2. 데이터 사용</h3>
+        <ul>
+          <li>앱 기능 제공 및 개선</li>
+          <li>알림을 위한 로컬 푸시 알림</li>
+          <li>Google Drive 백업 및 복원 (활성화 시)</li>
+        </ul>
+
+        <h3>3. 데이터 공유</h3>
+        <p>개인 데이터를 제3자에게 판매하지 않습니다. AdMob 광고(무료 버전)를 제외하고 데이터는 기기를 벗어나지 않습니다.</p>
+
+        <h3>4. 아동 개인정보</h3>
+        <p>Pet+는 모든 연령에 적합하며 13세 미만 아동의 정보를 수집하지 않습니다.</p>
+
+        <h3>5. 문의</h3>
+        <p>질문: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+      <!-- ARABIC -->
+      <div class="lang-section" id="lang-ar" dir="rtl" style="text-align: right;">
+        <h2>سياسة الخصوصية</h2>
+        <p>تصف هذه السياسة كيفية جمع <strong>Pet+</strong> واستخدام وحماية معلوماتك عند استخدام تطبيق تتبع الحيوانات الأليفة.</p>
+
+        <h3>١. المعلومات التي نجمعها</h3>
+        <h3>١.١ معلومات الحيوان الأليف</h3>
+        <p>عند إضافة حيوانات أليفة، تقدم:</p>
+        <ul style="padding-right: 20px; padding-left: 0;">
+          <li>الاسم والنوع والسلالة</li>
+          <li>تاريخ الميلاد والجنس</li>
+          <li>الوزن والوصف الجسدي</li>
+          <li>صور الحيوان الأليف</li>
+        </ul>
+        <p>يُخزَّن هذا البيانات <strong>محليًا على جهازك</strong> وإن رغبت في حساب Google Drive الشخصي.</p>
+
+        <h3>١.٢ التذكيرات والملاحظات</h3>
+        <p>تُخزَّن التذكيرات (البيطري، الأدوية، التطعيمات) والملاحظات محليًا وتُنسَخ اختياريًا إلى Google Drive.</p>
+
+        <h3>١.٣ النسخ الاحتياطي على Google Drive</h3>
+        <div class="highlight-box" style="border-right: 3px solid #7b68ee; border-left: none; border-radius: 12px 0 0 12px;">
+          <p>يمكن لـ Pet+ نسخ بياناتك احتياطيًا إلى Google Drive الخاص بك. نطلب الوصول فقط للملفات التي أنشأها هذا التطبيق. لا يمكننا قراءة ملفات أخرى في Drive. تظل البيانات تحت سيطرتك الكاملة.</p>
+        </div>
+
+        <h3>١.٤ الإعلانات (النسخة المجانية)</h3>
+        <p>تعرض النسخة المجانية إعلانات من <strong>Google AdMob</strong>، الذي قد يجمع معرّفات الجهاز وعنوان IP وفق <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>. لا يرى مستخدمو Premium أي إعلانات.</p>
+
+        <h3>١.٥ المشتريات داخل التطبيق</h3>
+        <p>تُعالَج مشتريات Pet+ Premium بواسطة <strong>Google Play Billing</strong>. نتلقى فقط تأكيد الشراء دون تفاصيل الدفع.</p>
+
+        <h3>٢. استخدام البيانات</h3>
+        <ul style="padding-right: 20px; padding-left: 0;">
+          <li>توفير ميزات التطبيق وتحسينها</li>
+          <li>إشعارات push المحلية للتذكيرات</li>
+          <li>النسخ الاحتياطي عبر Google Drive (إن فُعِّل)</li>
+        </ul>
+
+        <h3>٣. مشاركة البيانات</h3>
+        <p>لا نبيع بياناتك لأطراف ثالثة. لا تغادر البيانات جهازك إلا لإعلانات AdMob (النسخة المجانية فقط).</p>
+
+        <h3>٤. خصوصية الأطفال</h3>
+        <p>Pet+ مناسب لجميع الأعمار ولا يجمع بيانات الأطفال دون 13 عامًا.</p>
+
+        <h3>٥. التواصل</h3>
+        <p>للاستفسارات: <strong>tombiksstudio@gmail.com</strong></p>
+      </div>
+
+    </div><!-- .policy-card -->
+
+    <footer>
+      <p>© 2026 Tombiks Studio &nbsp;·&nbsp; <a href="/">← Developer Resources</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang, el) {
+      document.querySelectorAll('.lang-section').forEach(function(s) { s.classList.remove('active'); });
+      document.querySelectorAll('.lang-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.getElementById('lang-' + lang).classList.add('active');
+      el.classList.add('active');
+    }
+  </script>
+</body>
+</html>
